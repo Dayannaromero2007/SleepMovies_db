@@ -21,7 +21,7 @@
 
 LOCK TABLES `compras` WRITE;
 /*!40000 ALTER TABLE `compras` DISABLE KEYS */;
-INSERT INTO `compras` VALUES (1,'Dayanna Romero',2,1,50000,'2026-11-16 13:54:16'),(2,'Carlos Mendoza',4,1,100000,'2026-11-16 13:54:16'),(5,'Valentina Arango',2,4,37000,'2026-11-19 01:51:23');
+INSERT INTO `compras` VALUES (1,'Dayanna Romero',2,1,50000,'2026-11-16 13:54:16'),(2,'Carlos Mendoza',4,1,100000,'2026-11-16 13:54:16'),(5,'Valentina Arango',2,4,37000,'2026-11-19 01:51:23'),(7,'Geiffer Ardila',2,7,37000,'2026-11-19 16:28:58');
 /*!40000 ALTER TABLE `compras` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -31,7 +31,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `funciones` WRITE;
 /*!40000 ALTER TABLE `funciones` DISABLE KEYS */;
-INSERT INTO `funciones` VALUES (1,'2026-11-15 18:30:00','Sala 1 - IMAX',25000,76,1),(4,'2026-11-16 01:31:00','Sala 2 - 3D',18500,47,2);
+INSERT INTO `funciones` VALUES (1,'2026-11-21 18:30:00','Sala 1 - IMAX',15000,76,1),(4,'2026-11-21 01:31:00','Sala 2 - 3D',18500,47,2),(5,'2026-11-25 00:30:00','Sala 3 - IMAX',15000,80,4),(6,'2026-11-23 01:00:00','Sala 4 - IMAX',15000,80,6),(7,'2026-11-27 23:30:00','Sala 5 - 3D',18500,48,7),(8,'2026-11-26 00:30:00','Sala 6 - 3D',18500,50,8);
 /*!40000 ALTER TABLE `funciones` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -41,7 +41,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `peliculas` WRITE;
 /*!40000 ALTER TABLE `peliculas` DISABLE KEYS */;
-INSERT INTO `peliculas` VALUES (1,'Godzilla Minus Zero','Accion, ciencia ficcion, Drama',125,'PG-13',NULL),(2,'Dune: Parte Dos','Ciencia ficcion, Aventura',166,'PG-13',NULL),(3,'Interestelar','Ciencia ficcion, Drama',169,'PG-13',NULL),(4,'El Padrino','Crimen, Drama',175,'R',NULL),(6,'LUCY','Acción/Ciencia ficción',90,'+12',NULL);
+INSERT INTO `peliculas` VALUES (1,'Godzilla Minus Zero','Accion/ciencia ficcion/Drama',135,'+13','posters/Godzilla-Minus-Zero.jpg'),(2,'Duna: Parte Dos','Ciencia ficcion/Aventura',166,'+13','posters/Duna-Parte-dos.jpg'),(4,'El Padrino','Crimen/Crimen',175,'18+','posters/El-Padrino.jpg'),(6,'LUCY','Acción/Ciencia ficción',90,'+15','posters/Lucy.jpg'),(7,'La Odisea','Acción/Fantasía',172,'+14','posters/La-Odisea.jpg'),(8,'Interestelar','Ciencia ficción/Aventura',169,'+13','posters/Interestelar.jpg');
 /*!40000 ALTER TABLE `peliculas` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -54,4 +54,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-19  9:52:49
+-- Dump completed on 2026-11-19 11:35:32
