@@ -32,18 +32,8 @@ CREATE TABLE `compras` (
   PRIMARY KEY (`idcompras`),
   KEY `fk_compras_funcion` (`id_funcion`),
   CONSTRAINT `fk_compras_funcion` FOREIGN KEY (`id_funcion`) REFERENCES `funciones` (`idfunciones`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `compras`
---
-
-LOCK TABLES `compras` WRITE;
-/*!40000 ALTER TABLE `compras` DISABLE KEYS */;
-INSERT INTO `compras` VALUES (1,'Dayanna Romero',2,1,50000,'2026-11-16 13:54:16'),(2,'Carlos Mendoza',4,1,100000,'2026-11-16 13:54:16'),(3,'Prueba',2,1,50000,'2026-11-16 13:54:16'),(4,'Prueba 2',2,1,50000,'2026-11-16 20:51:46');
-/*!40000 ALTER TABLE `compras` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `funciones`
@@ -62,18 +52,8 @@ CREATE TABLE `funciones` (
   PRIMARY KEY (`idfunciones`),
   KEY `fk_funciones_pelicula` (`id_pelicula`),
   CONSTRAINT `fk_funciones_pelicula` FOREIGN KEY (`id_pelicula`) REFERENCES `peliculas` (`idpeliculas`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `funciones`
---
-
-LOCK TABLES `funciones` WRITE;
-/*!40000 ALTER TABLE `funciones` DISABLE KEYS */;
-INSERT INTO `funciones` VALUES (1,'2026-11-15 18:30:00','Sala 1 - IMAX',25000,76,1),(2,'2026-11-15 21:00:00','Sala 2 - 3D',18500,50,2);
-/*!40000 ALTER TABLE `funciones` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `peliculas`
@@ -88,19 +68,10 @@ CREATE TABLE `peliculas` (
   `genero` varchar(45) NOT NULL,
   `duracion` int NOT NULL,
   `clasificacion` varchar(10) NOT NULL,
+  `imagen` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`idpeliculas`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `peliculas`
---
-
-LOCK TABLES `peliculas` WRITE;
-/*!40000 ALTER TABLE `peliculas` DISABLE KEYS */;
-INSERT INTO `peliculas` VALUES (1,'Godzilla Minus Zero','Accion, ciencia ficcion, Drama',125,'PG-13'),(2,'Dune: Parte Dos','Ciencia ficcion, Aventura',166,'PG-13'),(3,'Interestelar','Ciencia ficcion, Drama',169,'PG-13'),(4,'El Padrino','Crimen, Drama',175,'R');
-/*!40000 ALTER TABLE `peliculas` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -111,4 +82,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-11-17 19:16:56
+-- Dump completed on 2026-11-19  9:51:07
